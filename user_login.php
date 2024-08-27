@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
    if($select_user->rowCount() > 0){
       $_SESSION['user_id'] = $row['id'];
       echo "<script>alert('Login successful. Welcome, " . $row['name'] . "!');</script>";
-      echo "<script>window.location.href='home.php';</script>";
+      echo "<script>window.location.href='index.php';</script>";
 
    }else{
       echo "<script>alert('incorrect email or password!')</script>";
